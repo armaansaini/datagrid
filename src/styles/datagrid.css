@@ -3,6 +3,7 @@
     position:sticky;
     display: flex;
     padding: 10px;
+    align-items: center;
 }
 
 .datagrid-table {
@@ -42,7 +43,7 @@
 }
 
 .datagrid-row:hover {
-    background-color: rgba(171, 229, 176, 0.2);
+    background-color: rgb(190, 248, 196);
 }
 
 .green-dot{ 
@@ -107,6 +108,6 @@ input[type="checkbox"]{
 
 .datagrid-row:hover {
     .status-column, .checkbox-column{
-        background-color: rgba(171, 229, 176, 0.07);
+        background-color: rgb(190, 248, 196);
     }
 }
