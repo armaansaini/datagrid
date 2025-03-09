@@ -1,0 +1,112 @@
+.header-container{
+    left: 0;
+    position:sticky;
+    display: flex;
+    padding: 10px;
+}
+
+.datagrid-table {
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-shadow: 5px 2px 2px 2px #dadada;
+}
+
+.datagrid-row {
+    display: flex;
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+    text-align: left;
+    td {
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        padding-right: 16px;
+        box-sizing: border-box;
+    }
+    &:last-child{
+        border-bottom: 0px;
+    }
+}
+
+
+.datagrid-header {
+    display: flex;
+    padding: 12px ;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    background-color: rgb(152, 229, 202);
+    text-align:left;
+    th {
+        box-sizing: border-box;
+    }
+}
+
+.datagrid-row:hover {
+    background-color: rgba(171, 229, 176, 0.2);
+}
+
+.green-dot{ 
+    border-radius: 100%;
+    background-color: #3ecf4a;
+    height: 15px;
+    width: 15px;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.download-button {
+    font-size:16px;
+    color: black;
+    margin-left: 12px;
+    cursor: pointer;
+    &:disabled {
+        color: gray;
+        cursor:not-allowed;
+    }
+}
+
+.name-column, .device-column{
+    width: 150px;
+}
+
+.path-column{
+    width: 600px;
+}
+
+.checkbox-column {
+    width: 50px;
+    left: 0;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(152, 229, 202);
+}
+
+.datagrid-row .checkbox-column {
+    background-color: white;
+}
+
+.status-column {
+    display: flex;
+    padding-left: 24px;
+    right: 0;
+    position: sticky;
+    align-items: center;
+    width: 150px;
+    background-color: rgb(152, 229, 202);
+    text-transform: capitalize;
+}
+
+.datagrid-row .status-column{
+    background-color: white;
+}
+
+.datagrid-row:hover {
+    .status-column, .checkbox-column{
+        background-color: rgba(171, 229, 176, 0.07);
+    }
+}
