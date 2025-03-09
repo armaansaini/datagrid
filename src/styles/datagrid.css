@@ -9,7 +9,6 @@
 .datagrid-table {
     border: 1px solid gray;
     border-radius: 4px;
-    box-shadow: 5px 2px 2px 2px #dadada;
 }
 
 .datagrid-row {
